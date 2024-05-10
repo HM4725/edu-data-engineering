@@ -10,7 +10,7 @@ After the installation, it needs to reboot.
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install python3-pip python3-venv
+sudo apt install python3-pip python3-venv pkg-config default-libmysqlclient-dev
 ```
 #### Activate the virtual environment
 ```bash
@@ -28,7 +28,10 @@ export AIRFLOW_HOME=$(pwd)
 sh install.sh
 ```
 Reference: https://airflow.apache.org/docs/apache-airflow/stable/start.html
-
+#### Install additional packages for python
+```bash
+pip install apache-airflow-providers-mysql
+```
 
 ## 2) Start Airflow
 ### 2-1. Run Airflow Standalone
