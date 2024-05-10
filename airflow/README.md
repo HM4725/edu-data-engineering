@@ -21,7 +21,7 @@ python3 -m venv .venv
 ### 1-3. Install Airflow
 #### Download Airflow
 ```bash
-./install.sh
+sh install.sh
 ```
 Reference: https://airflow.apache.org/docs/apache-airflow/stable/start.html
 #### Run bash script
