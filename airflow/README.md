@@ -19,15 +19,15 @@ python3 -m venv .venv
 ```
 
 ### 1-3. Install Airflow
-#### Set Airflow home
-```bash
-export AIRFLOW_HOME=$(pwd)
-```
 #### Download Airflow
 ```bash
-sh install.sh
+./install.sh
 ```
 Reference: https://airflow.apache.org/docs/apache-airflow/stable/start.html
+#### Run bash script
+```bash
+source ~/.bashrc
+```
 #### Install additional packages for python
 ```bash
 pip install apache-airflow-providers-mysql
