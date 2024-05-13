@@ -17,7 +17,7 @@ with DAG(
     default_args=default_args,
     description="인자를 받는 Python operator를 활용하는 DAG",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=False,
 ) as dag:
     task = PythonOperator(

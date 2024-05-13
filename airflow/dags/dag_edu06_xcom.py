@@ -28,7 +28,7 @@ with DAG(
     default_args=default_args,
     description="xcom을 활용한 task간의 데이터 전달",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=False,
 ) as dag:
     task1 = PythonOperator(task_id="get_name", python_callable=get_name)

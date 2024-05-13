@@ -13,7 +13,7 @@ with DAG(
     default_args=default_args,
     description="catchup과 backfill을 활용한 DAG",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=True,
 ) as dag:
     task1 = BashOperator(

@@ -13,7 +13,7 @@ default_args = {"owner": "hm", "retries": 5, "retry_delay": timedelta(minutes=2)
     default_args=default_args,
     description="Airflow API를 활용한 DAG [권장사항]",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=False,
 )
 def hello_world_etl():

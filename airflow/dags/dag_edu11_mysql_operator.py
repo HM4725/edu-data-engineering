@@ -15,7 +15,7 @@ with DAG(
     default_args=default_args,
     description="MySql operator을 활용한 DAG",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="0 0 * * *",
+    schedule="0 0 * * *",
     catchup=False,
 ) as dag:
     task = MySqlOperator(

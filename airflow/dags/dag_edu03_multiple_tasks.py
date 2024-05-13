@@ -11,7 +11,7 @@ with DAG(
     default_args=default_args,
     description="Tasks 여러개 활용하는 DAG",
     start_date=datetime(2024, 5, 1),
-    schedule_interval="@daily",
+    schedule="@daily",
     catchup=False,
 ) as dag:
     task1 = BashOperator(task_id="task_edu2_first", bash_command="echo hello airflow")
