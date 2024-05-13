@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 default_args = {"owner": "hm", "retries": 5, "retry_delay": timedelta(minutes=2)}
 
 with DAG(
-    dag_id="dag_edu3_multiple_tasks",
+    dag_id="dag_edu03_multiple_tasks",
     default_args=default_args,
     description="Tasks 여러개 활용하는 DAG",
     start_date=datetime(2024, 5, 1),

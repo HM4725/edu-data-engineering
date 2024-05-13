@@ -11,7 +11,7 @@ def task_greet():
 default_args = {"owner": "hm", "retries": 5, "retry_delay": timedelta(minutes=2)}
 
 with DAG(
-    dag_id="dag_edu4_python_operator",
+    dag_id="dag_edu04_python_operator",
     default_args=default_args,
     description="Python operator를 활용하는 DAG",
     start_date=datetime(2024, 5, 1),
