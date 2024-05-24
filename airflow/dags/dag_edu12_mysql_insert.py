@@ -57,4 +57,6 @@ with DAG(
         mysql_conn_id="mysql_de_dw",
         sql="./sqls/insert_records_products.sql")
 
-    task1 >> task2 >> task3
+    task_start = EmptyOperator(task_id="start")
+    task_end = EmptyOperator(task_id="end")
+    task_start >> task1 >> task2 >> task3 >> task_end
