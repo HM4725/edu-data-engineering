@@ -40,7 +40,7 @@ with DAG(
     default_args=default_args,
     description="MySql operator을 활용한 DAG",
     start_date=datetime(2024, 5, 1),
-    schedule="1 * * * *",
+    schedule="* * * * *",
     catchup=False,
 ) as dag:
 
