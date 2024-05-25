@@ -5,3 +5,4 @@ airflow-webserver.pid
 standalone_admin_password.txt
 webserver_config.py
 logs/
+backup*.sql
